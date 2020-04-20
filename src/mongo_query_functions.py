@@ -30,7 +30,7 @@ def create_geojson(df):
 
 #Find starbucks close to a location
 def near_starbuck(db_collection, location, dist=200):
-    nmbr_starb = db_collection.starbucks.find({'location':{'$near':{'$geometry':location,
+    nmbr_starb = db_collection.find({'location':{'$near':{'$geometry':location,
                                                                      '$maxDistance':dist}}}
                                                ).count()
     return nmbr_starb
