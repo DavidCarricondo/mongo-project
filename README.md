@@ -23,7 +23,7 @@ After trimming the candidate offices by a lot, executives refused to be in a pla
 Of course, if the executives got Starbucks, the CEO demanded a vegetarian restaurant. Luckily, veggy restaurants and Starbucks are usually not far appart.
 ### ***Friday party***
 Finally, there is the tradition of going out for party on Friday evening. And noone wants to walk very far. I filtered for offices with night-clubs around. 
-<p>I ended up with 15 candidates in three english cities that were scored according to a function that all agreed with</p>
+<p>I ended up with 15 candidates in three english cities that were scored according to a function that gives value to each category depending on how many people was affected to it</p>
 
 <img src="./OUTPUT/Map_general.png" alt="The candidates" title="The candidates" width="2000" height="500"/>
 
@@ -33,5 +33,5 @@ Specifically in ***Regent Street London United Kingdom W1B4DA***
 
 <img src="./OUTPUT/Map_detail.png" alt="The one" title="The one" width="2000" height="500"/>
 
-Note: You can see an online version of the interactive map by copying and pasting its htm code (/OUTPUT/html_map.html) in an online html viewer like:
+Note: You can see an online version of the interactive map by copying and pasting its [htm code](/OUTPUT/html_map.html) in an online html viewer like: 
 https://codebeautify.org/htmlviewer/#

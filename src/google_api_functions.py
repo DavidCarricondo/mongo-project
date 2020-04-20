@@ -12,7 +12,7 @@ def get_google(latlong, radius,typ, apiKey, keyw=None):
     res = requests.get(url)
     return res.json()['results']
 
-
+#Function that filters for offices with positive values of calls to googe places
 def school_kinder_filter(lst, keys,new_field, radius, typ, keyw=None, apiKey=None):
     new_lst=[]
     for of in lst:
@@ -24,4 +24,5 @@ def school_kinder_filter(lst, keys,new_field, radius, typ, keyw=None, apiKey=Non
         if count > 0:
             of[new_field] = count
             new_lst.append(of)
+    return new_lst
 

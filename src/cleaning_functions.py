@@ -33,12 +33,14 @@ def clean_raised(x):
 
 
 #Function for scoring results:
-
-score = lambda x:(-1 if x.pro_nearby==1 else x.pro_nearby)*0.3+\
-                    (-1 if x.airp_nearby<3 else x.airp_nearby)*0.2+\
-                    (-1 if x.kinder==1 or x.school==1 else x.kinder+x.school)*0.2+\
-                    (-1 if x.starbucks==1 else 1)*0.2+\
-                    (1 if x.disco>1 and x.disco<5 else 0)*0.1
+#It gives a value to each category that correspond to the 
+#percentage of staff affected by that decision
+score = lambda x:(-1 if x.pro_nearby==1 else x.pro_nearby)*0.17+\
+                    (-1 if x.airp_nearby<3 else x.airp_nearby)*0.22+\
+                    (-1 if x.kinder==1 or x.school==1 else x.kinder+x.school)*0.3+\
+                    (-1 if x.starbucks==1 else 1)*0.11+\
+                    (-1 if x.starbucks==1 else 1)*0.011+\
+                    (1 if x.disco>1 and x.disco<5 else 0)*1
         
 
 
