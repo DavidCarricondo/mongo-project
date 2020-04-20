@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b6442e860e084574866d5ea318f2da77 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b6442e860e084574866d5ea318f2da77" ></div>
+        
+</body>
+<script>    
+    
+            var map_b6442e860e084574866d5ea318f2da77 = L.map(
+                "map_b6442e860e084574866d5ea318f2da77",
+                {
+                    center: [51.520779, -0.10759],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_556cf05bdf2d4c289be32fd67ac13c6b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var marker_9e7a78ab72a94bc3bf7822a7b0b47b9b = L.marker(
+                [51.5115309, -0.1392765],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_f232c4a4e6e64ca69b81efef8ed5b9cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9e7a78ab72a94bc3bf7822a7b0b47b9b.setIcon(icon_f232c4a4e6e64ca69b81efef8ed5b9cd);
+        
+    
+        var popup_d1ba435c410149d39156922e4db40f9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59c9ed8c83da4f2bbbe5f2c35dc1f98f = $(`<div id="html_59c9ed8c83da4f2bbbe5f2c35dc1f98f" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #0</strong>     <p>     Pro_companies:37,     airports:7,     kinder:1,     schools:6,     starbucks:7,     discos:19     </p>     </div>`)[0];
+            popup_d1ba435c410149d39156922e4db40f9b.setContent(html_59c9ed8c83da4f2bbbe5f2c35dc1f98f);
+        
+
+        marker_9e7a78ab72a94bc3bf7822a7b0b47b9b.bindPopup(popup_d1ba435c410149d39156922e4db40f9b)
+        ;
+
+        
+    
+    
+            marker_9e7a78ab72a94bc3bf7822a7b0b47b9b.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e71d1aeeb3064f45a2c4246e65d2ee13 = L.marker(
+                [51.5115309, -0.1392765],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_9dbb07ea99524516955bb798074c3261 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e71d1aeeb3064f45a2c4246e65d2ee13.setIcon(icon_9dbb07ea99524516955bb798074c3261);
+        
+    
+        var popup_0690728f80904888a9848cc93fc76da9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6280275f1614238b5ec068bea06bb86 = $(`<div id="html_c6280275f1614238b5ec068bea06bb86" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #1</strong>     <p>     Pro_companies:37,     airports:7,     kinder:1,     schools:6,     starbucks:7,     discos:19     </p>     </div>`)[0];
+            popup_0690728f80904888a9848cc93fc76da9.setContent(html_c6280275f1614238b5ec068bea06bb86);
+        
+
+        marker_e71d1aeeb3064f45a2c4246e65d2ee13.bindPopup(popup_0690728f80904888a9848cc93fc76da9)
+        ;
+
+        
+    
+    
+            marker_e71d1aeeb3064f45a2c4246e65d2ee13.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5944697dd8b741cf9ffbcc16dcedc8aa = L.marker(
+                [51.5115309, -0.1392765],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_39c5f3647abb4a7282fe28d2d4dadd4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5944697dd8b741cf9ffbcc16dcedc8aa.setIcon(icon_39c5f3647abb4a7282fe28d2d4dadd4f);
+        
+    
+        var popup_f637d5d2ce354ea6890055311a6f1ac5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f770e1374488417fb6a5875c64ebe756 = $(`<div id="html_f770e1374488417fb6a5875c64ebe756" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #2</strong>     <p>     Pro_companies:37,     airports:7,     kinder:1,     schools:6,     starbucks:7,     discos:19     </p>     </div>`)[0];
+            popup_f637d5d2ce354ea6890055311a6f1ac5.setContent(html_f770e1374488417fb6a5875c64ebe756);
+        
+
+        marker_5944697dd8b741cf9ffbcc16dcedc8aa.bindPopup(popup_f637d5d2ce354ea6890055311a6f1ac5)
+        ;
+
+        
+    
+    
+            marker_5944697dd8b741cf9ffbcc16dcedc8aa.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b44518284954daf99dfeabeed1d9a4e = L.marker(
+                [51.511494, -0.139244],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_f03f99d34e68403d8a8f79676e309115 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8b44518284954daf99dfeabeed1d9a4e.setIcon(icon_f03f99d34e68403d8a8f79676e309115);
+        
+    
+        var popup_1f49fc3346a04b07b1dd37733aa7a168 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b51e8e5813941849afa1e74f7e178df = $(`<div id="html_4b51e8e5813941849afa1e74f7e178df" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #3</strong>     <p>     Pro_companies:37,     airports:7,     kinder:1,     schools:6,     starbucks:7,     discos:18     </p>     </div>`)[0];
+            popup_1f49fc3346a04b07b1dd37733aa7a168.setContent(html_4b51e8e5813941849afa1e74f7e178df);
+        
+
+        marker_8b44518284954daf99dfeabeed1d9a4e.bindPopup(popup_1f49fc3346a04b07b1dd37733aa7a168)
+        ;
+
+        
+    
+    
+            marker_8b44518284954daf99dfeabeed1d9a4e.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3253ef5a2b5d47caa51f41d4905cc3d2 = L.marker(
+                [51.5107737, -0.1392447],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_472ee2508999429aab23a16448faa064 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3253ef5a2b5d47caa51f41d4905cc3d2.setIcon(icon_472ee2508999429aab23a16448faa064);
+        
+    
+        var popup_b73d27e8a646417198d00767f16bd7e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcec5d57b9b3496b89e7fb8f4cdf3917 = $(`<div id="html_dcec5d57b9b3496b89e7fb8f4cdf3917" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #4</strong>     <p>     Pro_companies:37,     airports:7,     kinder:1,     schools:6,     starbucks:7,     discos:18     </p>     </div>`)[0];
+            popup_b73d27e8a646417198d00767f16bd7e7.setContent(html_dcec5d57b9b3496b89e7fb8f4cdf3917);
+        
+
+        marker_3253ef5a2b5d47caa51f41d4905cc3d2.bindPopup(popup_b73d27e8a646417198d00767f16bd7e7)
+        ;
+
+        
+    
+    
+            marker_3253ef5a2b5d47caa51f41d4905cc3d2.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89925d05ce034c2bbaa05c95c93daf0c = L.marker(
+                [51.5108803, -0.1418973],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_345adac113b440abbe14effb46cb93ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89925d05ce034c2bbaa05c95c93daf0c.setIcon(icon_345adac113b440abbe14effb46cb93ed);
+        
+    
+        var popup_cf1cab2d5f3c4aa0bada38570b83cc66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67e33357b56f4ac7aa14f499354bdee6 = $(`<div id="html_67e33357b56f4ac7aa14f499354bdee6" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #5</strong>     <p>     Pro_companies:37,     airports:7,     kinder:1,     schools:5,     starbucks:4,     discos:10     </p>     </div>`)[0];
+            popup_cf1cab2d5f3c4aa0bada38570b83cc66.setContent(html_67e33357b56f4ac7aa14f499354bdee6);
+        
+
+        marker_89925d05ce034c2bbaa05c95c93daf0c.bindPopup(popup_cf1cab2d5f3c4aa0bada38570b83cc66)
+        ;
+
+        
+    
+    
+            marker_89925d05ce034c2bbaa05c95c93daf0c.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1bb378cfe674604a6c7b80e35533076 = L.marker(
+                [51.519772, -0.1597092],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_3e40348541ab47e6b4ac9d7a423be638 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c1bb378cfe674604a6c7b80e35533076.setIcon(icon_3e40348541ab47e6b4ac9d7a423be638);
+        
+    
+        var popup_728a51a67a214a0388d3d33f2bdec9e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8125da35945943a78047d23539b8bf24 = $(`<div id="html_8125da35945943a78047d23539b8bf24" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #6</strong>     <p>     Pro_companies:35,     airports:7,     kinder:4,     schools:12,     starbucks:1,     discos:2     </p>     </div>`)[0];
+            popup_728a51a67a214a0388d3d33f2bdec9e0.setContent(html_8125da35945943a78047d23539b8bf24);
+        
+
+        marker_c1bb378cfe674604a6c7b80e35533076.bindPopup(popup_728a51a67a214a0388d3d33f2bdec9e0)
+        ;
+
+        
+    
+    
+            marker_c1bb378cfe674604a6c7b80e35533076.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0360669a6ca41008c6e3341b7fef468 = L.marker(
+                [51.520779, -0.10759],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_b3370ce2f298425ab0c35e168ef39356 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0360669a6ca41008c6e3341b7fef468.setIcon(icon_b3370ce2f298425ab0c35e168ef39356);
+        
+    
+        var popup_945f13a0dc284aee80950f4da93d4925 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_183a3e76e5c44539bbf8dccc867a7f88 = $(`<div id="html_183a3e76e5c44539bbf8dccc867a7f88" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #7</strong>     <p>     Pro_companies:34,     airports:6,     kinder:2,     schools:14,     starbucks:4,     discos:1     </p>     </div>`)[0];
+            popup_945f13a0dc284aee80950f4da93d4925.setContent(html_183a3e76e5c44539bbf8dccc867a7f88);
+        
+
+        marker_c0360669a6ca41008c6e3341b7fef468.bindPopup(popup_945f13a0dc284aee80950f4da93d4925)
+        ;
+
+        
+    
+    
+            marker_c0360669a6ca41008c6e3341b7fef468.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8451c27a9bb342029c6963c4ce1dbce6 = L.marker(
+                [51.5196135, -0.1020265],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_33e7152b27cd476d8abdee355a19d6d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8451c27a9bb342029c6963c4ce1dbce6.setIcon(icon_33e7152b27cd476d8abdee355a19d6d8);
+        
+    
+        var popup_d1c356b780a049798332e9af1077f1a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84806251bbb14da5a7b3882f81a0b416 = $(`<div id="html_84806251bbb14da5a7b3882f81a0b416" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #8</strong>     <p>     Pro_companies:34,     airports:6,     kinder:2,     schools:13,     starbucks:1,     discos:3     </p>     </div>`)[0];
+            popup_d1c356b780a049798332e9af1077f1a6.setContent(html_84806251bbb14da5a7b3882f81a0b416);
+        
+
+        marker_8451c27a9bb342029c6963c4ce1dbce6.bindPopup(popup_d1c356b780a049798332e9af1077f1a6)
+        ;
+
+        
+    
+    
+            marker_8451c27a9bb342029c6963c4ce1dbce6.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_697323d836e445f7850e06fe2b6fa562 = L.marker(
+                [51.5203268, -0.0994596],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_40290fa0b2744332920849dd7a2930b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_697323d836e445f7850e06fe2b6fa562.setIcon(icon_40290fa0b2744332920849dd7a2930b4);
+        
+    
+        var popup_a091eafa6ec948cea69bf230a2e5f4f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6d0c43cf38a450f9b44ec53697ae70d = $(`<div id="html_d6d0c43cf38a450f9b44ec53697ae70d" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #9</strong>     <p>     Pro_companies:34,     airports:6,     kinder:2,     schools:12,     starbucks:1,     discos:2     </p>     </div>`)[0];
+            popup_a091eafa6ec948cea69bf230a2e5f4f9.setContent(html_d6d0c43cf38a450f9b44ec53697ae70d);
+        
+
+        marker_697323d836e445f7850e06fe2b6fa562.bindPopup(popup_a091eafa6ec948cea69bf230a2e5f4f9)
+        ;
+
+        
+    
+    
+            marker_697323d836e445f7850e06fe2b6fa562.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28edc02f29e446f690e12952391aa177 = L.marker(
+                [51.52129, -0.10978],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_526cb9a7a15346e1a6e594e243a22b6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_28edc02f29e446f690e12952391aa177.setIcon(icon_526cb9a7a15346e1a6e594e243a22b6b);
+        
+    
+        var popup_0b9e8e3c647e4251bfb3b07517594496 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_917b24d121e040c7b6b7000175a836cd = $(`<div id="html_917b24d121e040c7b6b7000175a836cd" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #10</strong>     <p>     Pro_companies:34,     airports:6,     kinder:1,     schools:17,     starbucks:4,     discos:1     </p>     </div>`)[0];
+            popup_0b9e8e3c647e4251bfb3b07517594496.setContent(html_917b24d121e040c7b6b7000175a836cd);
+        
+
+        marker_28edc02f29e446f690e12952391aa177.bindPopup(popup_0b9e8e3c647e4251bfb3b07517594496)
+        ;
+
+        
+    
+    
+            marker_28edc02f29e446f690e12952391aa177.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b39ebe1128c64fe29e964f9fbcca3e54 = L.marker(
+                [51.5186118, -0.111509],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_af6211ba35ba4e679a74ae3182f25080 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b39ebe1128c64fe29e964f9fbcca3e54.setIcon(icon_af6211ba35ba4e679a74ae3182f25080);
+        
+    
+        var popup_130f50f5a1a84d2a8e8a44ac08b4b0c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7cf33085faf4553a2757895549c0a16 = $(`<div id="html_b7cf33085faf4553a2757895549c0a16" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #11</strong>     <p>     Pro_companies:34,     airports:6,     kinder:1,     schools:12,     starbucks:2,     discos:1     </p>     </div>`)[0];
+            popup_130f50f5a1a84d2a8e8a44ac08b4b0c3.setContent(html_b7cf33085faf4553a2757895549c0a16);
+        
+
+        marker_b39ebe1128c64fe29e964f9fbcca3e54.bindPopup(popup_130f50f5a1a84d2a8e8a44ac08b4b0c3)
+        ;
+
+        
+    
+    
+            marker_b39ebe1128c64fe29e964f9fbcca3e54.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf1330faaaf54c86988ee3e2df2562d5 = L.marker(
+                [51.5292245, -0.0921218],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_a25a0bdce4d54940a47ac63b16a65f35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cf1330faaaf54c86988ee3e2df2562d5.setIcon(icon_a25a0bdce4d54940a47ac63b16a65f35);
+        
+    
+        var popup_494ae3ace7ca44f79b005c39f19d39b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28561a17a006432a88ea2a5d3a4cbd0a = $(`<div id="html_28561a17a006432a88ea2a5d3a4cbd0a" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #12</strong>     <p>     Pro_companies:33,     airports:6,     kinder:3,     schools:18,     starbucks:1,     discos:2     </p>     </div>`)[0];
+            popup_494ae3ace7ca44f79b005c39f19d39b6.setContent(html_28561a17a006432a88ea2a5d3a4cbd0a);
+        
+
+        marker_cf1330faaaf54c86988ee3e2df2562d5.bindPopup(popup_494ae3ace7ca44f79b005c39f19d39b6)
+        ;
+
+        
+    
+    
+            marker_cf1330faaaf54c86988ee3e2df2562d5.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95616219ac19437180e8e32e90a9e11a = L.marker(
+                [51.5395914, -0.1525048],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_8ff19cd65bcd4acea9587fdfde2b5905 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_95616219ac19437180e8e32e90a9e11a.setIcon(icon_8ff19cd65bcd4acea9587fdfde2b5905);
+        
+    
+        var popup_fff5b1ced9354be6832a986d0e08fd8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d03ef98615ed44acb32eb348b6d5f9ba = $(`<div id="html_d03ef98615ed44acb32eb348b6d5f9ba" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #13</strong>     <p>     Pro_companies:32,     airports:6,     kinder:1,     schools:11,     starbucks:6,     discos:1     </p>     </div>`)[0];
+            popup_fff5b1ced9354be6832a986d0e08fd8d.setContent(html_d03ef98615ed44acb32eb348b6d5f9ba);
+        
+
+        marker_95616219ac19437180e8e32e90a9e11a.bindPopup(popup_fff5b1ced9354be6832a986d0e08fd8d)
+        ;
+
+        
+    
+    
+            marker_95616219ac19437180e8e32e90a9e11a.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_859cf5c5909941c8b2ee0b13ce635b56 = L.marker(
+                [51.5211159, -0.0778345],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_15335597cc9a4712a46b9560c61814de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_859cf5c5909941c8b2ee0b13ce635b56.setIcon(icon_15335597cc9a4712a46b9560c61814de);
+        
+    
+        var popup_c321785dbaeb41f2a2420f9da714800a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c2a66df95cf438498ad655812525a23 = $(`<div id="html_9c2a66df95cf438498ad655812525a23" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #14</strong>     <p>     Pro_companies:31,     airports:6,     kinder:1,     schools:18,     starbucks:8,     discos:11     </p>     </div>`)[0];
+            popup_c321785dbaeb41f2a2420f9da714800a.setContent(html_9c2a66df95cf438498ad655812525a23);
+        
+
+        marker_859cf5c5909941c8b2ee0b13ce635b56.bindPopup(popup_c321785dbaeb41f2a2420f9da714800a)
+        ;
+
+        
+    
+    
+            marker_859cf5c5909941c8b2ee0b13ce635b56.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b841780f5064417d98b13e42d0032ce3 = L.marker(
+                [51.4991094, -0.1984802],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_9150e006e8464b2d8b83c9c6e0dc4909 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b841780f5064417d98b13e42d0032ce3.setIcon(icon_9150e006e8464b2d8b83c9c6e0dc4909);
+        
+    
+        var popup_525d399ebdea4c52ba7eabc14b23446b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bc70b4da4944f78bdc678e9a4516de7 = $(`<div id="html_1bc70b4da4944f78bdc678e9a4516de7" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #15</strong>     <p>     Pro_companies:12,     airports:9,     kinder:4,     schools:13,     starbucks:1,     discos:1     </p>     </div>`)[0];
+            popup_525d399ebdea4c52ba7eabc14b23446b.setContent(html_1bc70b4da4944f78bdc678e9a4516de7);
+        
+
+        marker_b841780f5064417d98b13e42d0032ce3.bindPopup(popup_525d399ebdea4c52ba7eabc14b23446b)
+        ;
+
+        
+    
+    
+            marker_b841780f5064417d98b13e42d0032ce3.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3da52f7a9f7445fd8628d24e0511abca = L.marker(
+                [56.461428, -2.968111],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_708c7a3513154ae9b82ae7f5868ecf32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3da52f7a9f7445fd8628d24e0511abca.setIcon(icon_708c7a3513154ae9b82ae7f5868ecf32);
+        
+    
+        var popup_d0510387426245a090fdfe302bd4bd92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85281c51b6df4188bf409c68c8074202 = $(`<div id="html_85281c51b6df4188bf409c68c8074202" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #16</strong>     <p>     Pro_companies:2,     airports:1,     kinder:6,     schools:4,     starbucks:20,     discos:13     </p>     </div>`)[0];
+            popup_d0510387426245a090fdfe302bd4bd92.setContent(html_85281c51b6df4188bf409c68c8074202);
+        
+
+        marker_3da52f7a9f7445fd8628d24e0511abca.bindPopup(popup_d0510387426245a090fdfe302bd4bd92)
+        ;
+
+        
+    
+    
+            marker_3da52f7a9f7445fd8628d24e0511abca.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3635074f79af428987b1ab6d4ea7233e = L.marker(
+                [54.971065, -1.6194034],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_141a50b779034565bed696cfcb870d7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3635074f79af428987b1ab6d4ea7233e.setIcon(icon_141a50b779034565bed696cfcb870d7d);
+        
+    
+        var popup_1e99b98ec5884bf09c51e518cda3d881 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dd9e27309f14ff2bd8e4d14daf980a0 = $(`<div id="html_1dd9e27309f14ff2bd8e4d14daf980a0" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #17</strong>     <p>     Pro_companies:1,     airports:2,     kinder:1,     schools:7,     starbucks:13,     discos:20     </p>     </div>`)[0];
+            popup_1e99b98ec5884bf09c51e518cda3d881.setContent(html_1dd9e27309f14ff2bd8e4d14daf980a0);
+        
+
+        marker_3635074f79af428987b1ab6d4ea7233e.bindPopup(popup_1e99b98ec5884bf09c51e518cda3d881)
+        ;
+
+        
+    
+    
+            marker_3635074f79af428987b1ab6d4ea7233e.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2b03a159c5543a9a09d99f9f71b63d1 = L.marker(
+                [54.971346, -1.611141],
+                {}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+            var icon_6097811991aa4e24b5b3fae1228060eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2b03a159c5543a9a09d99f9f71b63d1.setIcon(icon_6097811991aa4e24b5b3fae1228060eb);
+        
+    
+        var popup_8f9cf8c1bdcf4f919c72515c9929e8e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_220b5febd79542039d52da57853052be = $(`<div id="html_220b5febd79542039d52da57853052be" style="width: 100.0%; height: 100.0%;">     <strong> Ranking : #18</strong>     <p>     Pro_companies:1,     airports:2,     kinder:1,     schools:3,     starbucks:15,     discos:20     </p>     </div>`)[0];
+            popup_8f9cf8c1bdcf4f919c72515c9929e8e3.setContent(html_220b5febd79542039d52da57853052be);
+        
+
+        marker_d2b03a159c5543a9a09d99f9f71b63d1.bindPopup(popup_8f9cf8c1bdcf4f919c72515c9929e8e3)
+        ;
+
+        
+    
+    
+            marker_d2b03a159c5543a9a09d99f9f71b63d1.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc5c68624cd74484b69e6e84037e391c = L.circleMarker(
+                [51.5115309, -0.1392765],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_b6442e860e084574866d5ea318f2da77);
+        
+    
+        var popup_a3257f7340bb48ed8e20c0b5a5edc827 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdea74dab90c4f25909b57bdb02f7521 = $(`<div id="html_bdea74dab90c4f25909b57bdb02f7521" style="width: 100.0%; height: 100.0%;">Optimal area</div>`)[0];
+            popup_a3257f7340bb48ed8e20c0b5a5edc827.setContent(html_bdea74dab90c4f25909b57bdb02f7521);
+        
+
+        circle_marker_bc5c68624cd74484b69e6e84037e391c.bindPopup(popup_a3257f7340bb48ed8e20c0b5a5edc827)
+        ;
+
+        
+    
+    
+                var lat_lng_popup_aa4a48a68da84dcdafade8fb88621680 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_aa4a48a68da84dcdafade8fb88621680
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_b6442e860e084574866d5ea318f2da77);
+                    }
+                map_b6442e860e084574866d5ea318f2da77.on('click', latLngPop);
+            
+</script>
