@@ -1,4 +1,6 @@
 
+import requests
+
 #Get lat long for google API
 def get_latlong(office):
  return str(office['location']['coordinates'][::-1]).replace(' ', '')[1:-1]

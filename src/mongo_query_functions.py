@@ -1,5 +1,5 @@
-def near_success_offices(location, dist=5000):
-    nmbr_offices = db.offices_loc_england.find({'$and':[{'deadpooled_year':None},
+def near_success_offices(db_collection,location, dist=5000):
+    offices = db_collection.find({'$and':[{'deadpooled_year':None},
                                                         {'category_code':{'$in':['biotech', 'cleantech', 
                                                                                  'games_video', 'mobile', 
                                                                                  'nanotech', 'network_hosting',
@@ -7,17 +7,17 @@ def near_success_offices(location, dist=5000):
                                                         {'$and':[{'raised':{'$gte':1}},
                                                                         {'location':{'$near':{'$geometry':location,
                                                                                               '$maxDistance':dist}}}]
-                                               }]}).count()
-    return nmbr_offices
+                                               }]})
+    return list(offices)
 
 
 
-def near_filter(lst, fn):
+def near_filter(db_collection, lst, fn, new_field):
     filtered_lst=[]
     for of in lst:
-        nr = fn(of['location'])
+        nr = len(fn(db_collection, of['location']))
         if nr > 0:
-            of['pro_nearby'] = nr 
+            of[new_field] = nr 
             filtered_lst.append(of)
     return filtered_lst
 
@@ -29,8 +29,8 @@ def create_geojson(df):
             
 
 #Find starbucks close to a location
-def near_starbuck(location, dist=200):
-    nmbr_starb = db.starbucks.find({'location':{'$near':{'$geometry':location,
+def near_starbuck(db_collection, location, dist=200):
+    nmbr_starb = db_collection.starbucks.find({'location':{'$near':{'$geometry':location,
                                                                      '$maxDistance':dist}}}
                                                ).count()
     return nmbr_starb
