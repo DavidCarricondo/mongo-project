@@ -30,6 +30,15 @@ def clean_raised(x):
     if 'k' in x:
         a = a/1000
     return round(a,3)
+
+
+#Function for scoring results:
+
+score = lambda x:(-1 if x.pro_nearby==1 else x.pro_nearby)*0.3+\
+                    (-1 if x.airp_nearby<3 else x.airp_nearby)*0.2+\
+                    (-1 if x.kinder==1 or x.school==1 else x.kinder+x.school)*0.2+\
+                    (-1 if x.starbucks==1 else 1)*0.2+\
+                    (1 if x.disco>1 and x.disco<5 else 0)*0.1
         
 
 
